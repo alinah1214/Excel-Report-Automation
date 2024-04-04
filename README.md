@@ -1,34 +1,34 @@
 # Rectifier Setting Issue Report Automation using VBA
 
-### Project OverView
-This project basically domonstrates the report automation in Excel by taking the real data of telenor cellular network sites having the rectifier setting problem. The report actually have all the sites that are having the recifier setting issue alarm longer than 3 days and is not resloved yet. 
+### Project Overview
+This project demonstrates automated reporting in Excel by utilizing real data from Telenor cellular network sites experiencing rectifier setting problems. The report includes sites with rectifier setting issue alarms lasting longer than 3 days that haven't been resolved yet.
 
 ### Data Sources
- The data is collected from two different network management systems.
+In order to make this report, the data is taken from two different Network Management Systems.
 1. EMS
 2. Netact
 Three files are from EMS (Ems1, EMS2, EMS3)
 Three files are from Netact (Netact1, Netact2)
 
 ### Report Steps
-The macro takes the following steps in order to makes the report.
+The macro takes the following steps in order to make the report.
 
-1. The Three EMS files data is aggregated together and all columns are removed except the required coloumns which are Seveirty, Raised time, NE and Alram Code.
-2. The data is cleaned by removing the DTP, TOF, LCK and NULL sites from the NE coloumn by using filteration
-3. The 6 digits are extracted and a seprate coloumn is made which actually represents sites ID.
-4. within macro sheet, there is region coloumn against sites ID so from this sheet the region is vlookuped in EMS sheet.
-6. The aging of the alarms is calculated in terms of days in separarte column and then the sites haiving aging < 4 days are removed from the report.
-7. The Pivit table is made containing the count of rectifier setting issue alarms region wise
-8. The dats is Named in a sheet named **ZTE land**.
+1. The data from the three EMS files is aggregated together, and all columns except the required ones—Severity, Raised time, NE, and Alarm Code—are removed
+2. The data is cleaned by filtering out DTP, TOF, LCK, and NULL sites from the NE column.
+3. The six digits are extracted from NE column, and a separate column is created to represent the site ID.
+4. Within the macro sheet, there is a region column corresponding to the site ID. From this sheet, the region is looked up using VLOOKUP in the agrregated EMS data.
+6. The aging of the alarms is calculated in terms of days in a separate column, and then the sites having an age of less than 4 days are removed from the report.
+7. A Pivot table is created containing the count of rectifier setting issue alarms region-wise
+8. The resulting report contains the data of sites with rectifier setting issues and a Pivot table is generated under the name **ZTE Land**.
 
 #### Note: 
-Same steps are taken for Netact sheets and in the end the report for Netact data is generted by the name **Nokia Land**.
+The same steps are taken for the Netact sheets, and in the end, the report for Netact data is generated under the name **Nokia Land**.
 
 
 ### Macro Usage
-Place EMS1, EMS2, EMS3, Naetact1, Netact2 and Rectifier setting Issue Macro in one folder
-Open Rectifier Setting Isuue macro and click on **Run** button
-The reoprt will be gereneted within 2-3 senonds
+- Place EMS1, EMS2, EMS3, Netact1, Netact2, and Rectifier Setting Issue Macro in one folder.
+- Open the Rectifier Setting Issue macro and click on the **Run** button.
+- The report will be generated within 2-3 seconds.
 
 
 ### Output Files:
