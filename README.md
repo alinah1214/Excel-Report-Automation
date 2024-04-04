@@ -7,8 +7,8 @@ This project demonstrates automated reporting in Excel by utilizing real data fr
 In order to make this report, the data is taken from two different Network Management Systems.
 1. EMS
 2. Netact
-Three files are from EMS (Ems1, EMS2, EMS3)
-Three files are from Netact (Netact1, Netact2)
+- Three files are from EMS (Ems1, EMS2, EMS3)
+- Three files are from Netact (Netact1, Netact2)
 
 ### Report Steps
 The macro takes the following steps in order to make the report.
@@ -32,6 +32,6 @@ The same steps are taken for the Netact sheets, and in the end, the report for N
 
 
 ### Output Files:
-Two files are generated in output as a reult of running a macro.
+Two files are generated in output as a result of running the macro.
 1. ZTE Land (For EMS)
 2. Nokia Land (For Netact)
